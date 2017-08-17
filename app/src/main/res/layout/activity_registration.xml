@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pingpongcombat_2.RegistrationActivity">
+
+    <TextView
+        android:id="@+id/tv_registration_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Registration"
+        android:textSize="25sp"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/rl_container_enterfields_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_registration_register"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/et_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insert Login"
+
+            />
+
+        <EditText
+            android:id="@+id/et_pswrd_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insert Password"
+            android:layout_below="@+id/et_login_register"
+
+            />
+
+        <EditText
+            android:id="@+id/et_pswrdconfirm_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_pswrd_register"
+            android:hint="Repeat Password"
+
+            />
+
+        <EditText
+            android:id="@+id/et_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_pswrdconfirm_register"
+            android:hint="Insert E-mail adress"
+
+            />
+
+        <EditText
+            android:id="@+id/et_pincode_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_email_register"
+            android:hint="Insert 4-symbol Pin-code"
+
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_sUp_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
