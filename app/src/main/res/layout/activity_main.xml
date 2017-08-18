@@ -4,12 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.pingpongcombat_2.MainActivity">
+    tools:context="com.example.pingpongcombat_2.activity.MainActivity">
+
     <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/vp_main">
+        android:layout_above="@+id/btn_new_game"
+        android:layout_alignParentEnd="true">
+
 
     </android.support.v4.view.ViewPager>
+
+    <Button
+        android:id="@+id/btn_new_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
