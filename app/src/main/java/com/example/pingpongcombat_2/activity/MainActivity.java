@@ -39,13 +39,14 @@ public class MainActivity extends AppCompatActivity {
         vpMain.setAdapter(mainPagerAdapter);
     }
 
-    private class MainPagerAdapter extends FragmentStatePagerAdapter{
+    private class MainPagerAdapter extends FragmentStatePagerAdapter {
         public MainPagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
         @Override
         public Fragment getItem(int position) {
+
             return fragments.get(position);
         }
 
