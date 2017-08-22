@@ -32,8 +32,26 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         etLogin = (EditText) findViewById(R.id.et_login_home);
         etPswrd = (EditText) findViewById(R.id.et_pswrd_Home);
 
+        if (savedInstanceState != null){
+            setData(savedInstanceState);
+        }
     }
 
+    private void setData(Bundle bundle) {
+        etLogin.setText(bundle.getString("login"));
+        etPswrd.setText(bundle.getString("password"));
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        String login = etLogin.getText().toString();
+        String password = etPswrd.getText().toString();
+
+        outState.putString("login", login);
+        outState.putString("password", password);
+    }
 
     /**
      * Called when a view has been clicked.
