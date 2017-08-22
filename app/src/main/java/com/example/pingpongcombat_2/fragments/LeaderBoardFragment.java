@@ -21,6 +21,8 @@ import java.util.List;
  */
 
 public class LeaderBoardFragment extends Fragment {
+
+
     private RecyclerView rvLeaderboard;
     private LeaderBoardAdapter adapter;
 
@@ -56,7 +58,6 @@ public class LeaderBoardFragment extends Fragment {
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(getContext()).inflate(R.layout.item_leaderboard, parent);
-
             return new LeaderBViewHolder(view);
 
 
