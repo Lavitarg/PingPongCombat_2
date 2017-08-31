@@ -57,7 +57,8 @@ public class LeaderBoardFragment extends Fragment {
 
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(getContext()).inflate(R.layout.item_leaderboard, parent);
+            View view = LayoutInflater.from(getContext()).inflate(R.layout.item_leaderboard, parent, false);
+
             return new LeaderBViewHolder(view);
 
 

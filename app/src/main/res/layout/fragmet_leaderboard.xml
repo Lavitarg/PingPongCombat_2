@@ -4,6 +4,7 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/tv_leaderboard_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -13,7 +14,8 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_leaderboard"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_leaderboard_title">
 
     </android.support.v7.widget.RecyclerView>
 

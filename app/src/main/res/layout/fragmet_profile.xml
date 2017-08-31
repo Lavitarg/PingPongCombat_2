@@ -3,12 +3,53 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
+        android:id="@+id/iv_profile_avatar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Stats"
-        android:textSize="25sp"/>
+        android:id="@+id/tv_profile_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:9000"
+        android:padding="5dp"
+        android:layout_below="@+id/iv_profile_avatar"/>
+    <TextView
+        android:id="@+id/tv_profile_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position:1"
+        android:layout_toRightOf="@+id/tv_profile_score"
+        android:layout_below="@+id/iv_profile_avatar"
+        android:padding="5dp"/>
+
+        />
+    <TextView
+        android:id="@+id/tv_profile_wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wins:10"
+        android:layout_toRightOf="@+id/tv_profile_position"
+        android:layout_below="@+id/iv_profile_avatar"
+        android:padding="5dp"/>
+        />
+    <TextView
+        android:id="@+id/tv_profile_loses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loses:0"
+        android:layout_toRightOf="@+id/tv_profile_wins"
+        android:layout_below="@+id/iv_profile_avatar"
+        android:padding="5dp"/>
+        />
+    <TextView
+        android:id="@+id/tv_profile_winrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winrate:110%"
+        android:layout_toRightOf="@+id/tv_profile_loses"
+        android:layout_below="@+id/iv_profile_avatar"
+        android:padding="5dp"/>
+        />
 
 </RelativeLayout>
